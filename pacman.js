@@ -28,7 +28,7 @@ var pinky = {
   edible: false
 };
 
-var pinky = {
+var clyde = {
   menu_option: '4',
   name: 'Clyde',
   colour: 'Orange',
@@ -36,8 +36,12 @@ var pinky = {
   edible: false
 };
 
-// replace this comment with your four ghosts setup as objects
-
+// setup four ghosts as objects
+ghosts = [];
+ghosts.push(inky);
+ghosts.push(blinky);
+ghosts.push(pinky);
+ghosts.push(clyde);
 
 // Draw the screen functionality
 function drawScreen() {
