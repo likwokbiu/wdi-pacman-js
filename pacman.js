@@ -83,6 +83,13 @@ function eatDot() {
   score += 10;
 }
 
+function eatGhost(key) {
+  if (ghosts[key - 1].edible === false ) {
+    console.log('\nYou are killed by the ' + ghosts[key - 1].name + ' in ' +  ghosts[key - 1].colour +  ' colour!');
+    lives -= 1;
+  };
+}
+
 
 // Process Player's Input
 function processInput(key) {
@@ -93,6 +100,12 @@ function processInput(key) {
       break;
     case 'd':
       eatDot();
+      break;
+    case '1':
+    case '2':
+    case '3':
+    case '4':
+      eatGhost(key);
       break;
     default:
       console.log('\nInvalid Command!');
