@@ -1,0 +1,13 @@
+c
+Score: 0     Lives: 2
+
+
+Select Option:
+
+(d) Eat Dot
+(q) Quit
+
+Waka Waka :v 
+
+Game Over!
+
