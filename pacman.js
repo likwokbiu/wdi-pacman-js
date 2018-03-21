@@ -69,10 +69,10 @@ function displayMenu() {
   if (powerPellets > 0) {
     console.log('(p) Eat Power-Pellet');
   }
-  console.log('(1) Eat Inky');
-  console.log('(2) Eat Blinky');
-  console.log('(3) Eat Pinky');
-  console.log('(4) Eat Clyde');
+  var desc;
+  for (var i = 0; i < ghosts.length; i++) {
+    console.log('(' + (i+1) + ') Eat ' + ghosts[i].name + ' (' + (ghosts[i].edible ? 'edible' : 'inedible') + ')');
+  };
   console.log('(q) Quit');
 }
 
