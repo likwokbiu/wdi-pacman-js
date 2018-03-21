@@ -96,6 +96,14 @@ function eatGhost(key) {
   }
 }
 
+function eatPowerPellet() {
+  score += 50;
+  powerPellets -= 1;
+  for (var i = 0; i < ghosts.lenght; i++) {
+    ghosts.edible = true;
+  };
+}
+
 
 // Process Player's Input
 function processInput(key) {
@@ -106,6 +114,9 @@ function processInput(key) {
       break;
     case 'd':
       eatDot();
+      break;
+    case 'p':
+      eatPowerPellet();
       break;
     case '1':
     case '2':
