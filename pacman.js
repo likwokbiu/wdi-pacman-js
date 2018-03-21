@@ -93,6 +93,11 @@ function eatGhost(key) {
     console.log('\nYou are killed by the ' + ghosts[key - 1].name + ' in ' +  ghosts[key - 1].colour +  ' colour!');
     lives -= 1;
   }
+  else {
+    console.log('\nYou just ate the ' + ghosts[key - 1].name + ' in ' +  ghosts[key - 1].colour +  ' colour!');
+    score += 200;
+    ghosts[key - 1].edible = false;
+  }
   if (lives < 0) {
     process.exit();
   }
